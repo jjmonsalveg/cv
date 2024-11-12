@@ -8,15 +8,19 @@ on:
       - 'cv.tex'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Build and Deploy LaTeX Document
     runs-on: ubuntu-latest
-    environment: unique
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
@@ -24,14 +28,9 @@ jobs:
           root_file: cv.tex
 
       - name: Commit and Push PDF
-        env:
-          TOKEN: ${{ secrets.PAT }}
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git remote set-url origin https://github.com/${{ github.repository }}
-          echo "https://${GITHUB_ACTOR}:${TOKEN}@github.com" > ~/.git-credentials
-          git config --global credential.helper store
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           git add cv.pdf
           git commit -m "Automated update of cv.pdf"
-          git push origin HEAD:main
+          git push
