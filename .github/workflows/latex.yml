@@ -18,12 +18,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up LaTeX environment
-        uses: dante-ev/latex-action@latest
-
       - name: Compile LaTeX document
-        run: |
-          latexmk -pdf -interaction=nonstopmode -halt-on-error cv.tex
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: cv.tex
 
       - name: Commit and Push PDF
         env:
