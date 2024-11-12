@@ -29,6 +29,9 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+          git remote set-url origin https://github.com/${{ github.repository }}
+          echo "https://${GITHUB_ACTOR}:${TOKEN}@github.com" > ~/.git-credentials
+          git config --global credential.helper store
           git add cv.pdf
           git commit -m "Automated update of cv.pdf"
-          git push https://$TOKEN@github.com/${{ github.repository }} HEAD:main
+          git push origin HEAD:main
