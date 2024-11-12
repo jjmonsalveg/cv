@@ -2,7 +2,11 @@
 
 To see the pdf clic [here](/cv.pdf)
 
-## Prerequisites
+## Run as a github action
+
+A github action was created in order to generate and commit the generated pdf.
+
+## Prerequisites(to run locally)
 
 1.  Install a LaTeX Distribution
 
@@ -136,3 +140,18 @@ make view
 <leader>lc clear aux files
 <leader>lv view the generated file
 ```
+
+## Generate PAT for Github actions
+
+Important: Select only the scopes necessary for your workflow to minimize
+security risks. For pushing to your repository, you need:
+
+- repo: Full control of private repositories (required even for public
+  repositories to push changes).
+- workflow: Update GitHub Action workflows (needed if your workflow modifies
+  workflows).
+
+Check the boxes next to repo and workflow. Copy the token and storage it
+in secure way, you will only see it once.
+
+Create a secret in your github environment called `PAT` and assign the value
