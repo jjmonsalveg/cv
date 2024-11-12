@@ -110,9 +110,7 @@ in case that is not present then install it
 
 ```shell
 sudo tlmgr update --self --all
-sudo tlmgr install latexmk
-sudo tlmgr install enumitem
-sudo tlmgr install needspace
+sudo tlmgr install latexmk enumitem needspace fontawesome5
 ```
 
 ### Compile from terminal
