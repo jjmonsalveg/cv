@@ -1,5 +1,7 @@
 # CV
 
+To see the pdf clic [here](/cv.pdf)
+
 ## Prerequisites
 
 1.  Install a LaTeX Distribution
