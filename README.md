@@ -84,6 +84,11 @@
         let g:tex_flavor = 'latex'
         let g:vimtex_view_method = 'zathura' " Use 'zathura', 'evince', 'okular', 'skim', etc.
         let g:vimtex_compiler_method = 'latexmk'
+        " Disable compilation
+        let g:vimtex_map_compile = 0
+
+        " Map to compile
+        nmap <leader>la <Plug>(vimtex-compile)
         ```
 
     5.  Install coc-texlab:
@@ -115,4 +120,19 @@ sudo tlmgr install needspace
 ```shell
 latexmk -C cv.tex
 latexmk -pdf cv.tex
+```
+
+or use our make commands
+
+```shell
+make fresh
+make view
+```
+
+### Compile from nvim
+
+```text
+<leader>la will compile the tex file (according to our config)
+<leader>lc clear aux files
+<leader>lv view the generated file
 ```
