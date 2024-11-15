@@ -1,10 +1,10 @@
 # CV
 
-To see the pdf clic [here](/cv.pdf)
+To see the pdf click [here](/cv.pdf)
 
 ## Run as a github action
 
-A github action was created in order to generate and commit the pdf.
+A GitHub action was created to generate and commit the pdf.
 
 ## Prerequisites(to run locally)
 
@@ -19,7 +19,7 @@ A github action was created in order to generate and commit the pdf.
 
     - macOS
 
-    Install [MacTeX](https://tug.org/mactex/) which is to heavy or use the lightweight
+    Install [MacTeX](https://tug.org/mactex/) which is too heavy or use the lightweight
     version [BasicTex](https://tug.org/mactex/morepackages.html).
 
     - Windows
