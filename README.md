@@ -97,7 +97,7 @@ A GitHub action was created to generate and commit the pdf.
       ```vim
       " VimTeX configuration
       let g:tex_flavor = 'latex'
-      let g:vimtex_view_method = 'zathura' " Use 'zathura', 'evince', 'okular', 'skim', etc.
+      let g:vimtex_view_method = 'zathura' " Use 'zathura', 'evince', 'okular'
       let g:vimtex_compiler_method = 'latexmk'
       " Disable compilation
       let g:vimtex_map_compile = 0
@@ -150,5 +150,5 @@ make view
 <localleader>lv view the generated file
 ```
 
-> [!INFO]
+> [!NOTE]
 > In my case localleader is \
