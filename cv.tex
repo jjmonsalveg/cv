@@ -7,212 +7,230 @@
 \usepackage{needspace}
 \usepackage{fontawesome5}
 \hypersetup{
-    colorlinks=true,
-    urlcolor=black,
+  colorlinks=true,
+  urlcolor=black,
 }
 
 \begin{document}
 
-% Header with icons and black color, centered and without colored links
+%------------------------------------------------------------------------------
+% HEADER
+%------------------------------------------------------------------------------
 \begin{center}
-	\textbf{\LARGE Jonathan Monsalve} \\[0.5em]
+	{\LARGE \textbf{Jonathan Monsalve}} \\[0.5em]
 	Mexico City, Mexico \\
 	\faPhone \ +52 56 1184 0899 \hspace{1em}
-	\faEnvelope \ \href{mailto:j.jmonsalveg@gmail.com}{j.jmonsalveg@gmail.com} \hspace{1em}
-	\faLinkedin \ \href{http://linkedin.com/in/jonathan-javier-monsalve}{linkedin.com/in/jonathan-javier-monsalve} \hspace{1em}
+	\faEnvelope \ \href{mailto:j.jmonsalveg@gmail.com}{j.jmonsalveg@gmail.com}
+	\hspace{1em}
+	\faLinkedin \ \href{http://linkedin.com/in/jonathan-javier-monsalve}{
+		linkedin.com/in/jonathan-javier-monsalve} \hspace{1em}
 	\faGithub \ \href{https://github.com/jjmonsalveg}{github.com/jjmonsalveg}
 \end{center}
 
 \vspace{0.5em}
 
-% Section line style with minimal spacing
+%------------------------------------------------------------------------------
+% SECTION LINE
+%------------------------------------------------------------------------------
 \newcommand{\sectionline}{
 	\noindent\rule{\linewidth}{0.4pt}\vspace{0.1em}
 }
 
+%------------------------------------------------------------------------------
+% SUMMARY
+%------------------------------------------------------------------------------
 \section*{Summary}
 \sectionline
 Engineering Manager and Systems Engineer with over 10 years of experience in
-programming and designing diverse computer systems. Passionate about creativity
-and innovation, embracing the philosophy that continuous improvement is always
-possible. Believes that in today's fast-paced world, adaptability and the speed
-of change are crucial. Strong background in web development and Unix-based
-operating systems, skilled in multidisciplinary teamwork, version control,
-planning, and rigorous quality control. Committed to staying at the forefront of
-technology, constantly learning and adapting to new advancements.
+designing and developing diverse computer systems. Passionate about creativity
+and innovation, embracing the philosophy that there is always room for
+improvement. In today's fast-paced tech environment, adaptability and quick
+iteration are crucial. Strong background in web development and Unix-based
+operating systems, with expertise in multidisciplinary teamwork, version
+control, project planning, and rigorous quality control. Committed to staying
+at the forefront of technology through continuous learning and adoption of
+new advancements.
 
+%------------------------------------------------------------------------------
+% SKILLS
+%------------------------------------------------------------------------------
 \section*{Skills}
 \sectionline
 \vspace{-1em}
 \begin{itemize}[leftmargin=0.5cm]
-	\item \textbf{Languages:} Ruby, Python, Golang, JavaScript.
-	\item \textbf{Frameworks:} Ruby on Rails, Django, FastAPI, Flask.
-	\item \textbf{Testing:} RSpec, minitest, Pytest, unittest, cucumber.
-	\item \textbf{Cloud \& DevOps:} AWS (Lambda functions, S3, API Gateway,
-	      EventBridge, Kinesis, Kafka, CloudWatch), CDK, CloudFormation, Linux
-	      Self-Hosting, Serverless Architectures, CI/CD Pipelines.
-	\item \textbf{Database Technologies:} MySQL, PostgreSQL, MongoDB, DynamoDB
-	\item \textbf{Frontend \& UI Frameworks:} HTML, CSS, JavaScript, Bootstrap, AngularJS
-	\item \textbf{Tools:} Jira, Datadog, Sentry, Snowflake.
-	\item \textbf{Generative AI:} LangChain, Pinecone, Chroma, ChatGPT models, copilot.
+	\item \textbf{Languages:} Ruby, Python, Golang, JavaScript
+	\item \textbf{Frameworks:} Ruby on Rails, Django, FastAPI, Flask
+	\item \textbf{Testing:} RSpec, Minitest, Pytest, Unittest, Cucumber
+	\item \textbf{Cloud \& DevOps:} AWS (Lambda, S3, API Gateway, EventBridge,
+	      Kinesis, Kafka, CloudWatch), CDK, CloudFormation, Linux Self-Hosting,
+	      Serverless Architectures, CI/CD Pipelines
+	\item \textbf{Databases:} MySQL, PostgreSQL, MongoDB, DynamoDB
+	\item \textbf{Frontend \& UI:} HTML, CSS, JavaScript, Bootstrap
+	\item \textbf{Tools:} Jira, Datadog, Sentry, Snowflake
+	\item \textbf{Generative AI:} LangChain, Pinecone, Chroma, ChatGPT models,
+	      Copilot
 	\item \textbf{Soft Skills:} Leadership, Communication, Team Building,
 	      Conflict Resolution, Decision-Making, Strategic Planning, Adaptability
 \end{itemize}
 
+%------------------------------------------------------------------------------
+% PROFESSIONAL EXPERIENCE
+%------------------------------------------------------------------------------
 \section*{Professional Experience}
 \sectionline
 \vspace{-1em}
 
-\textbf{Quantum / Camino Financial} \hfill \textit{Oct 2021 - Aug 2024} \\
-\textit{Engineering Manager} \hfill \textit{Mexico City, Mexico \& USA} \\
+\textbf{Quantum / Camino Financial} \hfill \textit{Oct 2021 -- Aug 2024}\\
+\textit{Engineering Manager} \hfill \textit{Mexico City, Mexico \& USA}\\
 \begin{itemize}[leftmargin=0.5cm, topsep=0pt, parsep=0pt, itemsep=2pt]
-	\item Hired and developed an engineering team across United States of
-	      America and Latin America, fostering a culture of technical rigor and
-	      continuous improvement.
-	\item Led a system design overhaul by migrating from a monolithic system to
-	      a microservices architecture using AWS serverless components, reducing
-	      feature development time significantly.
+	\item Hired and developed an engineering team across the United States and
+	      Latin America, fostering a culture of technical rigor and continuous
+	      improvement.
+	\item Led a system design overhaul, migrating from a monolithic architecture
+	      to AWS-based microservices, significantly reducing feature development time.
 	\item Implemented Test-Driven Development (TDD), continuous integration, and
-	      continuous deployment practices, enhancing code quality and speed to
-	      delivery.
-	\item Built an automated Financial Health Analysis product from the ground
-	      up, reducing manual effort by 90\% and scaling to support thousands of
+	      continuous deployment (CI/CD) practices to improve code quality and delivery.
+	\item Built an automated Financial Health Analysis product from the ground up,
+	      reducing manual effort by 90\% and scaling to support thousands of
 	      applications monthly.
-	\item Implemented a digitized bank document extraction system, processing
-	      over 10,000 documents monthly with 95\% accuracy, ensuring reliable
-	      financial insights.
-	\item Designed a secure document management system that enhanced stakeholder
-	      access by 40\% while adhering to stringent security standards.
-	\item Integrated with decisioning models to auto-decision approximately 40\%
-	      of applications based on financial health analysis data, significantly
-	      reducing underwriter workload and improving decision turnaround time.
-	\item Designed an integration with digital bank connection partners to
-	      enable on-demand cash flow analyses, streamlining the process and
-	      enhancing operational flexibility.
+	\item Deployed a digitized bank document extraction system, processing over
+	      10,000 documents monthly with 95\% accuracy for reliable financial insights.
+	\item Designed a secure document management system that improved stakeholder
+	      access by 40\%, adhering to stringent security standards.
+	\item Integrated decision models to auto-decision 40\% of applications,
+	      reducing underwriter workload and speeding up turnaround time.
+	\item Collaborated with digital bank connection partners to enable on-demand
+	      cash flow analyses, enhancing operational flexibility.
 	\item Reduced cash flow analysis time from 35 minutes to 2 minutes per
 	      application, boosting productivity and enabling a 17.5x increase in
 	      throughput.
-
 \end{itemize}
 
-\textbf{Covalto} \hfill \textit{Jan 2020 - Oct 2021} \\
-\textit{Back-end Developer} \hfill \textit{Mexico City, Mexico} \\
+\textbf{Covalto} \hfill \textit{Jan 2020 -- Oct 2021}\\
+\textit{Back-end Developer} \hfill \textit{Mexico City, Mexico}\\
 \begin{itemize}[leftmargin=0.5cm, topsep=0pt, parsep=0pt, itemsep=2pt]
-	\item Developed tailored credit solutions for restaurants with Uber Eats
-	      during the COVID-19 pandemic, showcasing problem-solving and
-	      adaptability.
-	\item Contributed to the backend development of web-based credit card
-	      products, advancing Covalto’s transition into a full-fledged financial
-	      institution in Mexico.
-	\item Increased responsibilities through demonstrated technical expertise
-	      and successful delivery of crucial backend projects.
+	\item Developed tailored credit solutions for restaurants in partnership with
+	      Uber Eats during the COVID-19 pandemic, showcasing adaptability.
+	\item Contributed to the backend of web-based credit card products,
+	      accelerating Covalto’s transition into a full-fledged financial institution.
+	\item Progressively took on more responsibilities by demonstrating technical
+	      expertise and successfully delivering crucial backend projects.
 \end{itemize}
 
-\textbf{RunaHR} \hfill \textit{May 2019 - Dec 2019} \\
-\textit{Back-end Leader} \hfill \textit{Mexico City, Mexico} \\
+\textbf{RunaHR} \hfill \textit{May 2019 -- Dec 2019}\\
+\textit{Back-end Leader} \hfill \textit{Mexico City, Mexico}\\
 \begin{itemize}[leftmargin=0.5cm, topsep=0pt, parsep=0pt, itemsep=2pt]
 	\item Promoted to Back-end Leader, scaling the company to support over 2,000
-	      businesses with approximately 5,000 employees.
-	\item Created and managed five agile squads to support rapid growth.
+	      businesses and approximately 5,000 employees.
+	\item Created and managed five agile squads to support rapid growth and
+	      feature delivery.
 \end{itemize}
 
-\textbf{} \hfill \textit{Jun 2018 - May 2019} \\
-\textit{Back-end Developer} \hfill \textit{Mexico City, Mexico} \\
+\textbf{} \hfill \textit{Jun 2018 -- May 2019}\\
+\textit{Back-end Developer} \hfill \textit{Mexico City, Mexico}\\
 \begin{itemize}[leftmargin=0.5cm, topsep=0pt, parsep=0pt, itemsep=2pt]
-	\item Joined as an early employee and developed a payroll product, securing
+	\item Joined as an early employee to develop a payroll product, securing
 	      over 300 clients in the first year.
-	\item Developed core features for the payroll system, contributing to the
+	\item Contributed core features for the payroll system, supporting the
 	      company’s initial product launch.
 	\item Implemented authentication and authorization systems, enhancing
 	      application security.
 \end{itemize}
 
-\textbf{Cleteci Panamá S.A.} \hfill \textit{Oct 2017 - May 2018} \\
-\textit{Technical Leader} \hfill \textit{Remote} \\
+\textbf{Cleteci Panamá S.A.} \hfill \textit{Oct 2017 -- May 2018}\\
+\textit{Technical Leader} \hfill \textit{Remote}\\
 \begin{itemize}[leftmargin=0.5cm, topsep=0pt, parsep=0pt, itemsep=2pt]
-	\item Led a team in developing a comprehensive system for travel agents to
-	      manage services like flights, hotels, car rentals, and other vacation
-	      services.
-	\item Evangelized modern development practices including cloud computing,
+	\item Led a team to develop a comprehensive platform for travel agents,
+	      managing flights, hotels, car rentals, and other vacation services.
+	\item Advocated for modern development practices, including cloud computing,
 	      containerization, automated testing, and CI/CD pipelines.
-	\item Implemented continuous deployment pipelines, enabling frequent and
-	      reliable software releases.
+	\item Set up continuous deployment pipelines, enabling frequent and reliable
+	      software releases.
 \end{itemize}
 
-\textbf{GN Marketing Inc} \hfill \textit{Aug 2015 - Sep 2017} \\
-\textit{Full-stack Developer} \hfill \textit{Remote, USA} \\
+\textbf{GN Marketing Inc.} \hfill \textit{Aug 2015 -- Sep 2017}\\
+\textit{Full-stack Developer} \hfill \textit{Remote, USA}\\
 \begin{itemize}[leftmargin=0.5cm, topsep=0pt, parsep=0pt, itemsep=2pt]
 	\item Developed and led a location-based advertising product, delivering
 	      notifications based on users’ geographic positions.
 	\item Pioneered the use of Docker for continuous integration and deployment,
-	      enhancing development workflows.
+	      streamlining development workflows.
 	\item Managed self-hosted Linux servers and improved system architecture.
 \end{itemize}
 
-\textbf{Biosoft C.A.} \hfill \textit{Oct 2014 - Jul 2015} \\
-\textit{Full-stack Developer} \hfill \textit{Mérida, Venezuela} \\
+\textbf{Biosoft C.A.} \hfill \textit{Oct 2014 -- Jul 2015}\\
+\textit{Full-stack Developer} \hfill \textit{Mérida, Venezuela}\\
 \begin{itemize}[leftmargin=0.5cm, topsep=0pt, parsep=0pt, itemsep=2pt]
-	\item Developed and maintained web applications, focusing on login,
+	\item Developed and maintained web applications focusing on login,
 	      authentication, and authorization systems.
-	\item Created reusable software components like dynamic forms, document
+	\item Created reusable software components such as dynamic forms, document
 	      management tools, and workflows using Petri nets.
-	\item Contributed to server management and deployment processes on Linux
-	      self-hosted environments.
+	\item Contributed to server management and deployment on Linux self-hosted
+	      environments.
 \end{itemize}
 
-\textbf{Call \& Call Mercadeo Directo C.A.} \hfill \textit{May 2014 - Sep 2014} \\
-\textit{Full-stack Developer} \hfill \textit{Mérida, Venezuela} \\
+\textbf{Call \& Call Mercadeo Directo C.A.} \hfill \textit{May 2014 -- Sep 2014}\\
+\textit{Full-stack Developer} \hfill \textit{Mérida, Venezuela}\\
 \begin{itemize}[leftmargin=0.5cm, topsep=0pt, parsep=0pt, itemsep=2pt]
-	\item Developed web systems enabling contact center operators to efficiently
-	      record call results.
-	\item Built data analysis and quality control tools, improving client
+	\item Built web systems for contact center operators to record call results
+	      efficiently.
+	\item Developed data analysis and quality control tools, enhancing client
 	      reporting for major Venezuelan companies.
-	\item Managed servers and ensured the reliability of web applications in a
-	      Red Hat Linux environment.
+	\item Managed servers and ensured high availability of web applications in
+	      a Red Hat Linux environment.
 \end{itemize}
 
+%------------------------------------------------------------------------------
+% EDUCATION
+%------------------------------------------------------------------------------
 \needspace{5\baselineskip}
 \section*{Education}
 \sectionline
-\textbf{Systems Engineering} \hfill Universidad de Los Andes \\
-\textit{11/2006 -- 04/2013, Mérida, Venezuela} \\
-Thesis: "Challenge to Complexity: BRAIN-CEMISID version 1.0. Design of an
-Operational Kernel for Constructing a Kernel-Brain in Parallel Programming using
-CUDA."
+\textbf{Systems Engineering} \hfill \textit{Universidad de Los Andes}\\
+\textit{Nov 2006 -- Apr 2013, Mérida, Venezuela}\\
+Thesis: \textit{"Challenge to Complexity: BRAIN-CEMISID version 1.0. Design of
+	an Operational Kernel for Constructing a Kernel-Brain in Parallel Programming
+	using CUDA."}
 
+%------------------------------------------------------------------------------
+% TRAINING AND COURSES
+%------------------------------------------------------------------------------
 \section*{Training and Courses}
 \sectionline
 \begin{itemize}[leftmargin=0.5cm, topsep=0pt, parsep=0pt, itemsep=2pt]
-	\item Mastering the System Design Interview, Sundog Education by Frank Kane,
-	      Udemy, Sept 2024
-	\item AWS Lambda and the Serverless Framework - Hands On Learning!, Paulo
-	      Dichone, Udemy, March 2023
-	\item Build a Backend REST API with Python \& Django - Beginner, Mark
-	      Winterbottom, Udemy, August 2020
-	\item High Performance Computing: From Theory to Practice, Ph.D. Juan
-	      Guillermo Gonzales, Accelogic, December 2014
-	\item Multicores and Multithreading Architectures, Francisco Tirado,
-	      September 2013
-	\item Parallel Programming with Abstractions, David Padua, October 2013
-	\item Computer Science 101: Introduction to Computer Science, Sebastian
-	      Thrun, Udemy, April 2012
+	\item \textbf{Mastering the System Design Interview}, Sundog Education by Frank
+	      Kane, Udemy, Sept 2024
+	\item \textbf{AWS Lambda and the Serverless Framework - Hands On Learning!},
+	      Paulo Dichone, Udemy, Mar 2023
+	\item \textbf{Build a Backend REST API with Python \& Django - Beginner},
+	      Mark Winterbottom, Udemy, Aug 2020
+	\item \textbf{High Performance Computing: From Theory to Practice},
+	      Ph.D. Juan Guillermo Gonzales, Accelogic, Dec 2014
+	\item \textbf{Multicores and Multithreading Architectures}, Francisco Tirado,
+	      Sep 2013
+	\item \textbf{Parallel Programming with Abstractions}, David Padua, Oct 2013
+	\item \textbf{Computer Science 101: Introduction to Computer Science},
+	      Sebastian Thrun, Udemy, Apr 2012
 \end{itemize}
 
+%------------------------------------------------------------------------------
+% UNIVERSITY PROJECTS AND RECOGNITIONS
+%------------------------------------------------------------------------------
 \section*{University Projects and Recognitions}
 \sectionline
 \begin{itemize}[leftmargin=0.5cm, topsep=0pt, parsep=0pt, itemsep=2pt]
 	\item \textbf{Analog Hydraulic System Emulator:} Designed and implemented an
-	      analog prototype in MATLAB to control the water level in a tank.
-	\item \textbf{Cultural Dictionary of the Andean Páramo:} Developed a PHP web
-	      project to document animal species and flora.
-	\item \textbf{MASTER FLAT Generator for IRAF:} CUDA-based project for
-	      transforming space images.
-	\item \textbf{Source Code Converter:} Developed a Bison/Flex-based converter
-	      to transform C code to Python as part of a compilers course.
-	\item \textbf{WireFish Network Analyzer:} Designed a TCP/IP traffic analyzer
+	      analog prototype in MATLAB to control water levels in a tank.
+	\item \textbf{Cultural Dictionary of the Andean Páramo:} Developed a PHP-based
+	      web project to document animal species and flora.
+	\item \textbf{MASTER FLAT Generator for IRAF:} CUDA-based project for processing
+	      and transforming space images.
+	\item \textbf{Source Code Converter:} Created a Bison/Flex-based tool to convert
+	      C code to Python as part of a compilers course.
+	\item \textbf{WireFish Network Analyzer:} Built a TCP/IP traffic analyzer
 	      inspired by Wireshark, using C++ and Qt.
-	\item \textbf{Cleda-plugin Development:} Created a plugin system for the
-	      Cleda Framework using XML, Echo3, Java, and Hibernate; awarded at the
+	\item \textbf{Cleda-plugin Development:} Created a plugin system for the Cleda
+	      Framework with XML, Echo3, Java, and Hibernate; recognized at the
 	      university's business fair.
 \end{itemize}
 

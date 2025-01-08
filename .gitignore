@@ -3,4 +3,5 @@ cv.fdb_latexmk
 cv.fls
 cv.log
 cv.out
+cv.synctex.gz
 indent.log
